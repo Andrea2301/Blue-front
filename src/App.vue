@@ -1,13 +1,6 @@
 <template>
   <!-- Header solo para usuarios no logueados -->
-  <header v-if="!isLoggedIn">
-    <h1>Blue Platform</h1>
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/login">Login</router-link> |
-      <router-link to="/register">Register</router-link>
-    </nav>
-  </header>
+
 
   <main>
     <router-view />
@@ -26,20 +19,11 @@ header {
   background-color: #0077cc;
   color: white;
   padding: 1rem;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 0.5rem;
-}
-
-nav a.router-link-active {
-  font-weight: bold;
+  text-align: center
 }
 
 main {
-  padding: 2rem;
+  padding: 0px;
+  margin: 0px;
 }
 </style>
