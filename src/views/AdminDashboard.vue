@@ -25,10 +25,7 @@ const loadMedia = async () => {
 const uploadMedia = async (event: any) => {
   const file = event.files[0]
 
-  const formData = new FormData()
-  formData.append('File', file)
-
-  await mediaService.upload(formData)
+  await mediaService.upload(file)
   showUpload.value = false
   loadMedia()
 }

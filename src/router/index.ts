@@ -71,7 +71,10 @@ router.beforeEach((to, from, next) => {
     const roles = to.meta.roles as string[]
 
     if (!role || !roles.includes(role)) {
-      return next(role === 'Admin' ? '/admin' : '/user')
+      const targetPath = role === 'Admin' ? '/admin' : '/user'
+      if (to.path !== targetPath) {
+        return next(targetPath)
+      }
     }
   }
 

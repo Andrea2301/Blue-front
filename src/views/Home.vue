@@ -25,7 +25,7 @@
     <section class="movie-row">
       <h2 class="row-header">Trending Now</h2>
       <div class="row-posters">
-        <img 
+        <!-- <img 
           v-for="n in 1" 
           :key="n" 
           src="../assets/img/cover1.jpg" 
@@ -45,7 +45,7 @@
           src="../assets/img/cover3.jpg" 
           alt="Movie Poster" 
           class="poster-placeholder" 
-        />
+        /> -->
       </div>
     </section>
   </div>
