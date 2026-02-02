@@ -11,8 +11,11 @@ import Password from 'primevue/password'
 //import 'primevue/resources/themes/lara-light-blue/theme.css'
 //import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
+import Tooltip from 'primevue/tooltip'
 
 const app = createApp(App)
+
+app.directive('tooltip', Tooltip)
 
 app.use(router)
 app.use(PrimeVue)
