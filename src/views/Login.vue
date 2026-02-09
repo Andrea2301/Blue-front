@@ -5,10 +5,10 @@
       <h2>Inicia sesión</h2>
       <div class="form-container">
         <div class="input-group">
-          <InputText v-model="email" placeholder="Email o número de teléfono" class="netflix-input" />
+          <InputText v-model="email" placeholder="Email " class="netflix-input" />
         </div>
         <div class="input-group">
-          <Password v-model="password" :feedback="false" toggleMask placeholder="Contraseña" inputClass="netflix-input" class="netflix-password" />
+          <Password v-model="password" :feedback="false" toggleMask placeholder="Password" inputClass="netflix-input" class="netflix-password" />
         </div>
         <Button label="Iniciar sesión" @click="loginUser" class="netflix-button" />
 

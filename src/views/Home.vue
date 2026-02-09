@@ -17,7 +17,7 @@
         </p>
         <div class="hero-actions">
           <Button label="Play" icon="pi pi-play" class="p-button-raised p-button-secondary play-btn" />
-          <Button label="More Info" icon="pi pi-info-circle" class="p-button-outlined info-btn" />
+          <Button label="More Info" icon="pi pi-info-circle" class="p-button-raised p-button-secondary info-btn" />
         </div>
       </div>
     </header>
@@ -25,27 +25,41 @@
     <section class="movie-row">
       <h2 class="row-header">Trending Now</h2>
       <div class="row-posters">
-        <!-- <img 
+        <img 
           v-for="n in 1" 
-          :key="n" 
+          :key="'c1-' + n" 
           src="../assets/img/cover1.jpg" 
           alt="Movie Poster" 
           class="poster-placeholder" 
         />
          <img 
           v-for="n in 1" 
-          :key="n" 
+          :key="'c2-' + n" 
           src="../assets/img/cover2.jpg" 
           alt="Movie Poster" 
           class="poster-placeholder" 
         />
          <img 
           v-for="n in 1" 
-          :key="n" 
+          :key="'c3-' + n" 
           src="../assets/img/cover3.jpg" 
           alt="Movie Poster" 
           class="poster-placeholder" 
-        /> -->
+        />
+         <img 
+          v-for="n in 1" 
+          :key="'c3-' + n" 
+          src="../assets/img/cover4.jpg" 
+          alt="Movie Poster" 
+          class="poster-placeholder" 
+        />
+         <img 
+          v-for="n in 1" 
+          :key="'c3-' + n" 
+          src="../assets/img/cover5.jpg" 
+          alt="Movie Poster" 
+          class="poster-placeholder" 
+        />
       </div>
     </section>
   </div>
@@ -94,7 +108,7 @@ import Button from 'primevue/button'
 .hero-banner {
   height: 80vh;
   background: linear-gradient(to right, rgba(0,0,0,0.8), transparent), 
-              url('https://occ-0-116-114.1.nflxso.net/dnm/api/v6/6AYY37jWKu2o9jwDoWlY8mW5UXQ/AAAABU7D_2n3LHS67pJpmNa4HSZFZ1LIRreZSkDOm5Tv6SryH5l6SJzL5S6V4V0CUEUv6fG_u5_Y3fL6qL6qL6qL6qL6qL6q.jpg?r=92a');
+              url('../assets/img/hero.jpg');
   background-size: cover;
   background-position: center;
   display: flex;

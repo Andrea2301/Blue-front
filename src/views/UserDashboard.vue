@@ -37,7 +37,7 @@ onMounted(loadMedia)
   <div class="user-dashboard">
     <nav class="navbar">
       <div class="nav-left">
-        <h1 class="brand">NETFLIX<span>USER</span></h1>
+        <h1 class="brand">NERFLIXX<span>USER</span></h1>
       </div>
       <div class="nav-right">
         <Button 

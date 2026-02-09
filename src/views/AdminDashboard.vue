@@ -69,7 +69,7 @@ onMounted(loadMedia)
     <!-- Navigation Bar -->
     <nav class="navbar">
       <div class="nav-left">
-        <h1 class="brand">NETFLIX<span>ADMIN</span></h1>
+        <h1 class="brand">NERTFLIXX<span>ADMIN</span></h1>
         <div class="stats">
           <Tag severity="info" :value="`${mediaList.length} Archivos`" />
         </div>
@@ -263,7 +263,7 @@ onMounted(loadMedia)
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.6);
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
   opacity: 0;
   transition: opacity 0.3s ease;
   display: flex;
